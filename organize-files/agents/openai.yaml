@@ -1,0 +1,4 @@
+interface:
+  display_name: "文件整理"
+  short_description: "先询问规则并获批，再整理本地文件；保留记录与撤回脚本。"
+  default_prompt: "使用 $organize-files 整理我指定的文件夹。没有规则时先询问我的期望，展示具体方案并得到明确批准后再保存隐藏规则和执行。保留所有文件、记录及撤回脚本。"
