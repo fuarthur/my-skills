@@ -22,12 +22,9 @@ cp -R my-skills/organize-files ~/.codex/skills/
 
 Copy only the skills you need. Keep each skill's supporting files together.
 
-## Use
+Or simply ask your AI agent to install those skills 
 
-Ask Codex: `Use $organize-files to organize my Downloads folder.`
+## Use
 
 See each category's README for details. Coursework use is subject to the [academic integrity disclaimer](coursework/README.md#academic-integrity--disclaimer). Organize Files is [MIT licensed](organize-files/LICENSE).
 
-## Add a skill
-
-Add a folder with a `SKILL.md` and any supporting files, then list it above. Group related skills under a category folder.
