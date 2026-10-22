@@ -9,6 +9,7 @@ My Codex skills for coursework, file organization, and more.
 | [Coursework](coursework/) | [setup-coursework-workspace](coursework/setup-coursework-workspace/) | Set up a coursework workspace. |
 | [Coursework](coursework/) | [discover-coursework-course](coursework/discover-coursework-course/) | Find course information, published tasks, and recurring workflow candidates from a course code or URL. |
 | [Coursework](coursework/) | [configure-coursework-course](coursework/configure-coursework-course/) | Add courses and recurring assignment workflows. |
+| [Coursework](coursework/) | [plan-coursework-week](coursework/plan-coursework-week/) | Plan or replan a week around deadlines, remaining coursework, and available time. |
 | [Files](organize-files/) | [organize-files](organize-files/) | Organize local files with approval, records, and undo support. |
 
 ## Install
@@ -19,6 +20,7 @@ mkdir -p ~/.codex/skills
 cp -R my-skills/coursework/setup-coursework-workspace ~/.codex/skills/
 cp -R my-skills/coursework/discover-coursework-course ~/.codex/skills/
 cp -R my-skills/coursework/configure-coursework-course ~/.codex/skills/
+cp -R my-skills/coursework/plan-coursework-week ~/.codex/skills/
 cp -R my-skills/organize-files ~/.codex/skills/
 ```
 
