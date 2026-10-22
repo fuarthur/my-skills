@@ -1,6 +1,6 @@
 ---
 name: configure-coursework-course
-description: Use when adding or updating a course in a coursework workspace, or configuring a user's recurring assignment workflow from that course's actual requirements.
+description: Use when configuring or updating a course profile or a user's recurring assignment workflows from verified course requirements and workflow recommendations.
 ---
 
 # 配置课程与个人作业流程
@@ -11,7 +11,9 @@ description: Use when adding or updating a course in a coursework workspace, or 
 
 先读目标工作区 `AGENTS.md`、`README.md`、`workflows/COURSEWORK-WORKFLOW.md`；存在已有课程档案和任务状态时接续处理。没有工作区时先用 `setup-coursework-workspace`（若可用）建骨架，或请用户指定一个已有工作区，不凭本 skill 的模板改写无关目录。
 
-取得课程标识、正式名称、学期和有要求差异的班型；仅为标识已知课程创建 `courses/{course-id}/materials/`、`assignments/`。标识不明时先询问，或在 `inbox/` 保存有明确来源的输入，不编造标识。
+用户只提供学校、课号或课程链接，且尚缺课程事实时，优先使用 `discover-coursework-course`（若可用）主动核实身份、查找材料及当前任务，再回到本流程。已有课程档案、`assignments/INDEX.md` 和来源记录时复用其中仍适用的信息；状态与截止在需要时重新核查，不让用户重述已取得事实。发现 skill 不可用时，用当前可用工具沿官方入口查找，仅询问仍无法解决的必要缺项。
+
+取得课程标识、正式名称、学期和有要求差异的班型；仅为身份有依据的课程创建 `courses/{course-id}/materials/`、`assignments/`。身份仍有歧义时询问最小消歧问题，或在 `inbox/` 保存有明确来源的输入，不编造标识或合并不同班次。
 
 完成标准：本次目标课程与已有目录匹配；创建或更新范围明确。
 
@@ -29,13 +31,22 @@ description: Use when adding or updating a course in a coursework workspace, or 
 
 ## 3. 确认个人分工与重复流程
 
-从用户请求及已取得的要求确认哪些任务会重复、哪些只处理本次；沿用已确认内容，只询问本次有影响的缺项。由用户决定语言、表达水平、篇幅偏好、工具、交付形式、需要亲自选择的步骤、个人事实及 agent 分工。
+从用户请求、课程事实及已有工作流建议确认本次拟配置的类型。按实际性质、独立轮次和处理步骤判断重复性；课程发现中的候选仍需用户选择，考试或同一项目的多个阶段不自动成为重复类型。全学期仅一两次的任何类型默认按单次任务管理，不推荐持久流程；目前只发布一两次但大纲明确安排多次的类型，按计划总量和可复用步骤判断。用户明确要求为低频任务配置流程时，按其指定范围处理。
+
+**每种作业工作流首次初始化时，先提供两个选项：**
+
+1. **沿用并优化现有流程。** 请用户用自己的话描述目前怎么做，可以简短。先准确还原其步骤、工具、选择点和分工，再提出具体改进及原因；保留使用者想继续采用的做法，将原流程与待采纳的优化分开，让用户确认变动。
+2. **由 LLM 直接起草。** 根据已核实要求和已有偏好，直接提出完整、可执行的流程，包含输入、步骤、用户／agent 分工、每次需核实的变量及交付检查。用户无需先描述现有流程；未知个人偏好保留为可选择项，不编造经历或授权。
+
+多个类型一起初始化时可一次给出两种方式，允许统一选择或分别选择。用户已明确提供现有做法、要求直接起草或选择了方式时，记录其对应方式并接续，不重复询问。已有已启用流程的普通执行不重新初始化。
+
+沿用已确认的语言、表达水平、篇幅、工具、交付方式、选择点、个人事实及分工。先形成用户可评阅的流程草案，再仅询问仍会影响执行的缺项；用户已明确授权 agent 决定的部分直接完成。草案和优化建议在未获相应确认时保持待配置，不写成已启用个人默认。
 
 需要用户选例子、思路或工具时，按用户约定给候选并等待真实回复；用户已委托代选时记录该授权并继续。课程材料要求的硬性格式与用户偏好分栏记录，不把一个课程的选择扩展为全工作区默认。
 
 仅为已确认的重复类型，用 [assets/RECURRING-WORKFLOW.md](assets/RECURRING-WORKFLOW.md) 向统一工作流追加或更新课程章节。明确的单次任务使用其 `STATUS.md`；重复性未知时保持待确认，不把课程里的每个条目自动注册为持久流程。
 
-完成标准：持久流程有当前使用者的确认依据；选择点、交付标准与分工可执行；未确认步骤没有被写成默认规则。
+完成标准：首次初始化已提供两种方式或承接用户的明确选择；持久流程有当前使用者的确认依据；选择点、交付标准与分工可执行；草案和未采纳优化没有被写成默认规则。
 
 后续单次任务中的临时修改，按目标工作区通用交付要求处理：先完成本次交付，再在确有复用价值时询问是否保存；明确要求长期沿用的指示可直接保存，不重复确认。
 

@@ -7,6 +7,7 @@
 | `inbox/` | 尚未归档的新材料 |
 | `courses/{course-id}/COURSE.md` | 当前课程事实、来源与待核查项 |
 | `courses/{course-id}/materials/` | 可复用材料及 `SOURCES.md` |
+| `courses/{course-id}/assignments/INDEX.md` | 课程发现时建立的已发布任务／阶段快照、核查覆盖与重复工作流建议 |
 | `courses/{course-id}/assignments/{task-id}/` | 单次任务的 `STATUS.md`、`input/`、`working/`、`output/` |
 | `workflows/COURSEWORK-WORKFLOW.md` | 通用流程及使用者已确认的重复作业流程 |
 | `workflows/CHANGELOG.md` | 实际流程变更 |
@@ -20,7 +21,7 @@
 - 沟通／成果语言与表达偏好：待确认。
 - 时区：待确认；课程截止时间时区须另行核实。
 - 常用交付方式：待确认。
-- 已取得的课程入口和材料：待提供。
-- 下一步：按使用者实际课程配置资料和重复作业流程。
+- 最小课程线索／已取得的入口和材料：待提供；可从学校／课号或课程链接主动发现。
+- 下一步：发现并核实实际课程；按用户选择为适合的重复类型配置个人流程。
 
 骨架建立不表示课程材料已核查或作业已完成。

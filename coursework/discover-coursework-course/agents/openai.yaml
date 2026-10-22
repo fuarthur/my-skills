@@ -1,0 +1,4 @@
+interface:
+  display_name: "Discover Coursework Course"
+  short_description: "Find course facts, assignments, and reusable workflows"
+  default_prompt: "Use $discover-coursework-course to find my course from its school/course code or course URL, record published tasks and status, and suggest recurring workflows."

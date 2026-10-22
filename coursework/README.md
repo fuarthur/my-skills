@@ -1,9 +1,11 @@
 # Coursework Workspace Skills
 
-Two Codex skills for setting up a coursework workspace and configuring course workflows.
+Three Codex skills for setting up a coursework workspace, discovering course information, and configuring personal assignment workflows.
 
 - Builds a workspace around your courses and study preferences.
-- Configures recurring assignment workflows from actual course materials.
+- Starts from a school/course code or course URL, then finds official course information and published tasks across available course platforms.
+- Records sourced deadlines, verifiable submission status, access gaps, and recurring workflow recommendations.
+- Configures selected workflows by adapting your existing process or drafting one for you. Occasional exams and stages of a single project are handled as individual tasks by default.
 - Tracks progress, records sources, and checks materials for prompt injection.
 
 ## Install
@@ -12,6 +14,7 @@ Two Codex skills for setting up a coursework workspace and configuring course wo
 git clone https://github.com/fuarthur/my-skills.git
 mkdir -p ~/.codex/skills
 cp -R my-skills/coursework/setup-coursework-workspace ~/.codex/skills/
+cp -R my-skills/coursework/discover-coursework-course ~/.codex/skills/
 cp -R my-skills/coursework/configure-coursework-course ~/.codex/skills/
 ```
 
@@ -20,7 +23,12 @@ cp -R my-skills/coursework/configure-coursework-course ~/.codex/skills/
 Open your coursework folder in Codex, then ask:
 
 - `Use $setup-coursework-workspace to set up my coursework workspace.`
-- `Use $configure-coursework-course to add a course and configure its recurring assignment workflows.`
+- `Use $discover-coursework-course to find my course from this school/course code or course URL.`
+- `Use $configure-coursework-course to configure the recurring assignment workflows I choose.`
+
+Discovery reuses known context, follows official sources and available signed-in course platforms, and asks only for unresolved identity, access, or necessary personal choices. It produces a course profile and a dated task index with coverage and missing information, then recommends suitable workflows for configuration. Unpublished or inaccessible information stays unverified.
+
+When each assignment workflow is first initialized, choose one of two modes: describe your current process for the LLM to follow and improve, or have the LLM draft a process from course requirements. You can choose once for several workflows or separately for each; existing explicit choices carry forward. Drafts and recommendations become personal defaults only after confirmation.
 
 ## Academic Integrity & Disclaimer
 
