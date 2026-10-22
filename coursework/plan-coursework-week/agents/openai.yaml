@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Coursework Week"
+  short_description: "Plan coursework around deadlines and available time"
+  default_prompt: "Use $plan-coursework-week to plan or replan my coursework week around actual deadlines, remaining work, and available study time."
