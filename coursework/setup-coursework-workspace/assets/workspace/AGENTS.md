@@ -8,6 +8,8 @@
 
 交付前读取[通用交付要求](workflows/COURSEWORK-WORKFLOW.md#通用交付要求)。用户询问剩余作业或近期截止事项时，同时读取[跨课程作业核查](workflows/COURSEWORK-WORKFLOW.md#跨课程作业核查)，按当前使用者实际配置的课程和平台核查。
 
+用户要安排一周任务或根据新进度重排时，使用可用的 `plan-coursework-week`，沿用本工作区的核查规则与已有计划；该 skill 不可用时，按已核实任务和用户可用时间交付计划与缺口。
+
 开始具体任务时，读取[统一工作流](workflows/COURSEWORK-WORKFLOW.md)，定位对应的已确认个人流程，再查看该课程 `COURSE.md`、实际题目及已有 `STATUS.md`。新课程和单次任务同样适用通用流程；没有个人流程时不推断使用者的默认要求。
 
 接入新课程但只有学校／课号或课程链接时，优先使用可用的 `discover-coursework-course` 主动查找信息；发现后按实际重复性建议 `configure-coursework-course`。每种个人作业工作流首次初始化遵循统一工作流的两种方式，沿用用户已作出的明确选择。
