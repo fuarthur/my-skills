@@ -9,6 +9,7 @@
 | `courses/{course-id}/materials/` | 可复用材料及 `SOURCES.md` |
 | `courses/{course-id}/assignments/INDEX.md` | 课程发现时建立的已发布任务／阶段快照、核查覆盖与重复工作流建议 |
 | `courses/{course-id}/assignments/{task-id}/` | 单次任务的 `STATUS.md`、`input/`、`working/`、`output/` |
+| `plans/{start-date}--{end-date}.md` | 周计划、时间预算、未排事项与重排记录；已有计划位置时沿用原约定 |
 | `workflows/COURSEWORK-WORKFLOW.md` | 通用流程及使用者已确认的重复作业流程 |
 | `workflows/CHANGELOG.md` | 实际流程变更 |
 | `templates/` | 任务状态与材料来源模板 |
