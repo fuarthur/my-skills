@@ -11,6 +11,7 @@ My Codex skills for coursework, file organization, and more.
 | [Coursework](coursework/) | [configure-coursework-course](coursework/configure-coursework-course/) | Add courses and recurring assignment workflows. |
 | [Coursework](coursework/) | [plan-coursework-week](coursework/plan-coursework-week/) | Plan or replan a week around deadlines, remaining coursework, and available time. |
 | [Files](organize-files/) | [organize-files](organize-files/) | Organize local files with approval, records, and undo support. |
+| [Audio / Video](transcribe-local/) | [transcribe-local](transcribe-local/) | Recover lecture and recording context with local MLX Whisper transcription and timestamped subtitles. |
 
 ## Install
 
@@ -22,6 +23,7 @@ cp -R my-skills/coursework/discover-coursework-course ~/.codex/skills/
 cp -R my-skills/coursework/configure-coursework-course ~/.codex/skills/
 cp -R my-skills/coursework/plan-coursework-week ~/.codex/skills/
 cp -R my-skills/organize-files ~/.codex/skills/
+cp -R my-skills/transcribe-local ~/.codex/skills/
 ```
 
 Copy only the skills you need. Keep each skill's supporting files together.

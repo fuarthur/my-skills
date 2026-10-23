@@ -1,0 +1,4 @@
+interface:
+  display_name: "Transcribe Local"
+  short_description: "Recover audio and video context with local MLX Whisper"
+  default_prompt: "Use $transcribe-local to recover a timestamped transcript from this audio or video and use it as context for my task."
