@@ -1,0 +1,4 @@
+interface:
+  display_name: "初始化 DDL 来源"
+  short_description: "连接课程平台、日历或订阅链接，保存下次可直接读取的私人 DDL 来源"
+  default_prompt: "Use $setup-deadline-sources to set up reusable sources for checking my upcoming deadlines."

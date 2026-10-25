@@ -1,0 +1,4 @@
+interface:
+  display_name: "查看近期 DDL"
+  short_description: "直接读取已保存来源，简洁列出近期截止事项及必要的日期或来源缺口"
+  default_prompt: "Use $check-deadlines to show my upcoming deadlines as a concise list."

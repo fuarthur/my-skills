@@ -10,6 +10,8 @@ My Codex skills for coursework, file organization, and more.
 | [Coursework](coursework/) | [discover-coursework-course](coursework/discover-coursework-course/) | Find course information, published tasks, and recurring workflow candidates from a course code or URL. |
 | [Coursework](coursework/) | [configure-coursework-course](coursework/configure-coursework-course/) | Add courses and recurring assignment workflows. |
 | [Coursework](coursework/) | [plan-coursework-week](coursework/plan-coursework-week/) | Plan or replan a week around deadlines, remaining coursework, and available time. |
+| [Deadlines](deadlines/) | [setup-deadline-sources](deadlines/setup-deadline-sources/) | Connect reusable deadline sources from Canvas, calendars, subscriptions, or files. |
+| [Deadlines](deadlines/) | [check-deadlines](deadlines/check-deadlines/) | Show upcoming deadlines as a concise list, using saved sources. |
 | [Files](organize-files/) | [organize-files](organize-files/) | Organize local files with approval, records, and undo support. |
 | [Audio / Video](transcribe-local/) | [transcribe-local](transcribe-local/) | Recover lecture and recording context with local MLX Whisper transcription and timestamped subtitles. |
 
@@ -22,6 +24,8 @@ cp -R my-skills/coursework/setup-coursework-workspace ~/.codex/skills/
 cp -R my-skills/coursework/discover-coursework-course ~/.codex/skills/
 cp -R my-skills/coursework/configure-coursework-course ~/.codex/skills/
 cp -R my-skills/coursework/plan-coursework-week ~/.codex/skills/
+cp -R my-skills/deadlines/setup-deadline-sources ~/.codex/skills/
+cp -R my-skills/deadlines/check-deadlines ~/.codex/skills/
 cp -R my-skills/organize-files ~/.codex/skills/
 cp -R my-skills/transcribe-local ~/.codex/skills/
 ```
