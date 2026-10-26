@@ -14,6 +14,7 @@ My Codex skills for coursework, file organization, and more.
 | [Deadlines](deadlines/) | [check-deadlines](deadlines/check-deadlines/) | Show upcoming deadlines as a concise list, using saved sources. |
 | [Files](organize-files/) | [organize-files](organize-files/) | Organize local files with approval, records, and undo support. |
 | [Audio / Video](transcribe-local/) | [transcribe-local](transcribe-local/) | Recover lecture and recording context with local MLX Whisper transcription and timestamped subtitles. |
+| [Learning](test-me/) | [test-me](test-me/) | Learn a concept with simple explanations, worked examples, and interactive questions with plausible misconception-based choices. |
 
 ## Install
 
@@ -28,6 +29,7 @@ cp -R my-skills/deadlines/setup-deadline-sources ~/.codex/skills/
 cp -R my-skills/deadlines/check-deadlines ~/.codex/skills/
 cp -R my-skills/organize-files ~/.codex/skills/
 cp -R my-skills/transcribe-local ~/.codex/skills/
+cp -R my-skills/test-me ~/.codex/skills/
 ```
 
 Copy only the skills you need. Keep each skill's supporting files together.

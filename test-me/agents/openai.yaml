@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Me"
+  short_description: "Learn simply with questions that expose misconceptions"
+  default_prompt: "Use $test-me to teach me a concept with a simple explanation, a worked example, and one question at a time."
